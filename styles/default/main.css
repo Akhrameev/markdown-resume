@@ -1,3 +1,12 @@
+:root {
+  --primary: #314147;
+  --secondary: #bdcdd1;
+  --trinary: #5d6a6d;
+  --additional: #bdcdd1;
+  --surface: #fdf4f5;
+  --line: #a4b3b6;
+}
+
 html,
 body,
 div,
@@ -83,9 +92,20 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
-  color: #0C0604;
+  color: var(--primary);
+}
+
+p {
+  font-family: 'SF Pro Display';
+}
+
+h1 {
+  font-family: 'SF Pro Rounded';
+}
+
+h2, h3 {
+  font-family: 'SF Pro Display';
 }
 
 html {
@@ -126,8 +146,6 @@ body {
   font: normal normal 400;
   font-size: 14pt;
   line-height: 1.3em;
-  /* font-family: Verdana,sans-serif; */
-  font-family: Latin Modern Roman, Latin Modern Math, serif;
 }
 
 
@@ -161,7 +179,7 @@ h1,
 h2,
 h3 {
   font-variant-caps: small-caps;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 h1 {
@@ -171,14 +189,14 @@ h1 {
   line-height: 1em;
   position: relative;
   left: 0%;
-  /* margin-top: 2em; */
+  margin-top: 1em;
 }
 
 
 h2 {
   /* font-weight: bold; */
   font-size: 1.1em;
-  color: #482009;
+  color: var(--secondary);
   margin-top: 12pt;
   position: relative;
   text-align: left;
@@ -194,8 +212,7 @@ h2 + h3 {
 
 h3 {
   font-size: 1em;
-  /* color: #653a1a; */
-  color: #AD7549;
+  color: var(--trinary);
   position: relative;
   height: 0px;
   text-align: left;
@@ -222,20 +239,22 @@ h4 {
 }
 
 /* copied from code */
-h4 code {
-  /* font-weight: normal; */
-  font-weight: bold;
-  color: #424242;
-  letter-spacing: 0px;
-  font-size: 90%;
-  line-height: calc(1.3em / 0.9);
-  margin-bottom: inherit;
+h5 code {
+  font-family: 'SF Pro Rounded', monospace;
+  font-weight: 600;
+  margin: 16px;
+  padding: 16px;
+  display: block;
+  color: var(--primary);
+  font-size: 110%;
+  line-height: 1.5em;
   position: relative;
-  text-align: right;
-  float: right;
   clear: none;
-  right: 0px;
-  margin-left: 10px;
+}
+
+h5 {
+  background-color: var(--surface);
+  margin: 16px;
 }
 
 h2 + h4,
@@ -244,7 +263,7 @@ h3 + h4{
 }
 
 blockquote {
-  border-left: 3px solid #0C0604;
+  border-left: 3px solid var(--line);
   padding-left: 10px;
   position: relative;
   left: 25%;
@@ -257,6 +276,7 @@ blockquote {
 blockquote p {
   left: 0%;
   width: 100%;
+  color: var(--additional);
 }
 
 /* blockquote:before { */
