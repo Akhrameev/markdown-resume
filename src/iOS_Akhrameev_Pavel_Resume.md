@@ -1,5 +1,5 @@
 ---
-title: Pavel Akhrameev - Senior iOS Developer
+title: Pavel Akhrameev, $~~~$```Senior iOS Developer```
 
 margin-left: 1.5cm
 margin-right: 1.8cm
@@ -10,16 +10,17 @@ papersize: a4
 style: default
 ---
 
-<hr />
+_______________________________________________________________
 
 ## Contact information
 
-<p.akhrameev@gmail.com>\
-[GitHub](https://github.com/Akhrameev)
-$~$ ┈ $~$
-[LinkedIn](https://www.linkedin.com/in/akhrameev/)
-$~$ ┈ $~$
 [Telegram](https://t.me/Akhrameev)
+$~$ ┈┈ $~$
+<p.akhrameev@gmail.com>
+
+[LinkedIn](https://www.linkedin.com/in/akhrameev/)
+$~$ ┈┈ $~$
+[GitHub](https://github.com/Akhrameev)
 
 ## Brief
 
@@ -65,6 +66,8 @@ My key contributions include:
   - #9 in the App Store's Travel category
   - #29 in Google Play's Maps & Navigation category
 
+$~$
+
 ### Picsart: Senior iOS Developer
 
 > Full time $~$ ┈➤ $~$ Yerevan, Armenia; Moscow, Russia
@@ -86,6 +89,8 @@ As a Senior iOS Developer, I played a key role in integrating AI-powered feature
 - Combined Photo and Video cameras and simplified user access to dozens of Effects.
 - In **D'EFEKT** app reworked async code to make it more supportable and stable, created new onboarding and subscription screens, made **Metal**-effects implementation easier for technical artists.
 
+$~$
+
 ### VK: Senior iOS Developer
 
 > Full time $~$ ┈➤ $~$ Moscow, Russia
@@ -99,6 +104,8 @@ As a Senior iOS Developer, I played a key role in integrating AI-powered feature
 - *Investigated and resolved bugs:* Improved platform stability and user experience.
 - *Developed "Profile Questions" feature:* This new feature, inspired by *Instagram Stories*, allowed users to engage with their followers through interactive questions, driving increased engagement and leading to significant design updates in the user profile page.
 - *Ensured comprehensive test coverage:* Applied screenshot-comparing tests, guaranteeing pixel-perfect results for users.
+
+$~$
 
 ### Yandex: Mobile Developer
 
@@ -114,6 +121,8 @@ As a Senior iOS Developer, I played a key role in integrating AI-powered feature
 - Updated the guidance UI and made it pixel-perfect with strict deadline (before *Yet Another Conference*).
 - Released offers functionality to retain users' attention to sales and promotions and make Yandex.Navigator profitable.
 
+$~$
+
 ### Movavi: Clips Video Editor
 
 > Full time $~$ ┈➤ $~$ Novosibirsk, Russia
@@ -126,6 +135,10 @@ As a Senior iOS Developer, I played a key role in integrating AI-powered feature
 - Hired two junior developers, mentored and provided guidance to enforce coding style and code review practices.
 - Maintained app high performance and stability, with minimal crashes.
 - Facilitated the adoption of an Agile approach within our dream team, taking on the dual role of a developer and a scrum-master.
+
+$~$
+
+_______________________________________________________________
 
 ## Education
 
