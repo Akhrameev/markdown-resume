@@ -1,5 +1,5 @@
 ---
-title: Pavel Akhrameev, $~~~$```Senior iOS Developer```
+title: Pavel Akhrameev,$~~~$```Senior iOS Developer```
 
 margin-left: 1.5cm
 margin-right: 1.8cm
@@ -14,13 +14,16 @@ _______________________________________________________________
 
 ## Contact information
 
-[Telegram](https://t.me/Akhrameev)
-$~$ ┈┈ $~$
-<p.akhrameev@gmail.com>
-
-[LinkedIn](https://www.linkedin.com/in/akhrameev/)
-$~$ ┈┈ $~$
-[GitHub](https://github.com/Akhrameev)
+<table class="contact-table">
+  <tr>
+    <td>p.akhrameev@gmail.com</td>
+    <td>t.me/Akhrameev</td>
+  </tr>
+  <tr>
+    <td>linkedin.com/in/akhrameev</td>
+    <td>github.com/Akhrameev</td>
+  </tr>
+</table>
 
 ## Brief
 
@@ -36,11 +39,7 @@ iOS, Android
 
 Xcode, UIKit, AVFoundation, GCD, Async+await, Combine, Git, Metal, Flutter, Figma
 
-### Soft Skills
-
-Teamwork, Problem-solving, Creativity, Time Management, Leadership, Mentorship, Adaptivity
-
-##### ```Seasoned iOS developer with a passion for building high-performance, user-centric apps. Expertise in multimedia integration, concurrent programming and resource-intensive tasks. Proven ability to solve complex technical challenges and deliver impactful mobile experiences on time. I'm fully open to relocation and enthusiastic about contributing to new challenges.```
+##### ```Senior iOS Developer with a track record of building and scaling mobile applications for millions of users. Key achievements include driving a feature to over 1 billion uses (Picsart), spearheading an app from concept to a Top 10 App Store ranking in 2 months (Rhino), and shipping features for a navigation app with 5M+ daily users (Yandex). Experienced in leading development cycles, improving team processes, and contributing to engineer hiring.```
 
 ## Experience
 
@@ -54,17 +53,14 @@ Teamwork, Problem-solving, Creativity, Time Management, Leadership, Mentorship, 
 
 **Rhino**, a São Paulo-based startup, is revolutionizing the transportation industry by offering armored car taxi services.
 
-As the Flutter Mobile Developer, I spearheaded the development of our mobile app from concept to launch in just two months, contributing significantly to their early success.
+As the founding Flutter Mobile Developer, I spearheaded the app's development from concept to a successful launch in just two months, securing a Top 10 App Store ranking. My role has since expanded to include process leadership and strategic technical ownership.
 
-My key contributions include:
+Key Achievements:
 
-- Developed iOS and Android apps from scratch using Flutter (Dart).
-- Collaborated closely with the team to ensure a smooth and timely launch.
-- Implemented reusable UI elements adaptive for wide range of screen resolutions.
-- Decreased Google Places API cost for more than 30%.
-- Achieved impressive app store rankings:
-  - #9 in the App Store's Travel category
-  - #29 in Google Play's Maps & Navigation category
+- Owned the end-to-end development cycle for the DriverApp, from technical specification and implementation to testing, creating a reliable and scalable codebase for future expansion.
+- Initiated and led a process overhaul for task estimation within the frontend team, improving predictability and workflow for 4 developers.
+- Contributed to the engineering hiring process, including technical interviews and candidate evaluation.
+- Reduced Google Places API costs by over 30% through performance optimization.
 
 $~$
 

@@ -1,175 +1,152 @@
+/*
 @import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 @import url('https://fonts.cdnfonts.com/css/sf-mono');
-/*@import url('https://fonts.cdnfonts.com/css/roboto-slab-2');*/
-/*@import url('https://fonts.cdnfonts.com/css/roboto-serif');*/
+*/
 
+/* --- 1. LOCAL FONT DEFINITIONS --- */
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('fonts/SF-Pro-Display.woff') format('woff');
+  font-weight: 400 700; /* Covers regular and bold weights */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Mono';
+  src: url('fonts/SF-Mono.woff') format('woff');
+  font-weight: 400 700;
+  font-style: normal;
+}
+
+/* --- Reset and Basic Setup --- */
 :root {
   --primary: #314147;
   --secondary: #bdcdd1;
   --trinary: #5d6a6d;
-  --additional: #bdcdd1;
   --surface: #fdf4f5;
   --line: #a4b3b6;
-  --titleFont: 'SF Pro Display';
-  --hederFont: 'SF Pro Display';
-  --bodyFont: 'SF Pro Display';
+  --titleFont: 'SF Pro Display', sans-serif;
+  --bodyFont: 'SF Pro Display', sans-serif;
   --quoteFont: 'SF Mono', monospace;
   --linkFont: 'SF Mono', monospace;
 }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+/* Universal Reset */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, strong, ul, li, article, aside, figure, figcaption, footer, header, section {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   vertical-align: baseline;
-  color: /*var(--primary);*/#314147;
+  color: var(--primary);
+  box-sizing: border-box;
 }
 
-p,
-li {
-  font-family: /*var(--bodyFont);*/ 'SF Pro Display';
-}
-
-h1 {
-  font-family: /*var(--titleFont);*/'SF Pro Display';
-  font-weight: 700;
-}
-
-h2,
-h3 {
-  font-family: /*var(--hederFont);*/'SF Pro Display';
-}
-
+/* Basic Document styles */
 html {
   margin: 0 auto;
   max-width: 1000px;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
 body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* end of reset */
-
-body {
-  font: normal normal 400;
+  font-family: var(--bodyFont);
+  font-weight: 400;
   font-size: 14pt;
   line-height: 1.3em;
 }
 
+ul {
+  list-style: none;
+}
+/* --- End of Reset --- */
+
+
+/* --- Main Layout and Typography --- */
+
+h1 {
+  font-family: var(--titleFont);
+  font-weight: 700;
+  font-size: 1.8em;
+  line-height: 1.1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-family: var(--titleFont);
+  font-variant-caps: small-caps;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: var(--secondary);
+  width: 100%;
+  text-align: left;
+  clear: both;
+  margin-top: 1.4em;
+  margin-bottom: 0.8em;
+}
+
+/* --- FINAL FIXES APPLIED HERE --- */
+/* Left-column Sub-headers (e.g., "Programming", "Tech Skills") */
+h3 {
+  font-family: var(--titleFont);
+  font-variant-caps: small-caps;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: var(--trinary);
+  float: left;
+  clear: left;
+  width: 20%;
+  padding-left: 2%;
+  position: relative;
+  /* 1. Added margin-bottom to create space between h3 sections */
+  margin-bottom: 1.4em;
+}
+
+/* Right-column Content (Paragraphs, Lists) */
+p, ul, blockquote, h4 {
+  width: 75%;
+  margin-left: 25%;
+  margin-bottom: 7pt;
+  text-align: justify;
+}
+
+/* Section Subtitles in the right column */
+h4 {
+  font-weight: bold;
+  margin-top: 1.5em; /* This creates the space for the entire row */
+  text-align: left;
+}
+
+/* General Content Paragraphs */
+p {
+  margin-top: 0;
+}
+
+/* The FIRST content element after a header must also have a margin-top */
+h3 + p, h3 + ul {
+  /* This margin must match the h3 'top' property for alignment */
+  margin-top: 1.5em;
+}
+
+/* Rule for content that directly follows a major h2 heading */
+h2 + p, h2 + ul, h2 + h4 {
+  width: 100%;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+
+/* --- Unchanged Styles Below --- */
 
 ul {
-  position: relative;
-  left: 25%;
-  /*width: 65%;*/
+  width: 75%;
   margin-bottom: 10px;
-  /*margin-top: -0.5em;*/
+}
+
+li {
+  padding-left: 1.25em;
+  text-indent: -1.25em;
+  margin-bottom: 0.25em;
 }
 
 li:before {
@@ -178,160 +155,72 @@ li:before {
   left: -0.25em;
 }
 
-li {
-  padding-left: 1.25em;
-  text-indent: -1.25em;
-}
-
-li ul {
-  position: relative;
-  left: 0;
-  width: 100%;
-  /* margin-top: 0.25em; */
-}
-
-h2,
-h3 {
-  font-variant-caps: small-caps;
-  font-weight: 600;
-}
-
-h1 {
-  width: 90%;
-  text-align: left;
-  font-size: 1.9em;
-  line-height: 1em;
-  position: relative;
-  left: 0%;
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-
-h2 {
-  /* font-weight: bold; */
-  font-size: 1.1em;
-  color: /*var(--secondary);*/#bdcdd1;
-  position: relative;
-  text-align: left;
-  width: 20%;
-
-  height: 0px;
-  top: 0em;
-}
-
-h2 + h3 {
-  margin-top: 1.5em;
-}
-
-h3 {
-  font-size: 1em;
-  color: /*var(--trinary);*/#5d6a6d;
-  position: relative;
-  height: 0px;
-  text-align: left;
-  width: 18%;
-  left: 2%;
-}
-
-p,
-h4 {
-  position: relative;
-  left: 23%;
-  margin-bottom: 7pt;
-  margin-right: 0;
-  width: 77%;
-  text-align: justify;
-  text-justify: inter-word;
-  clear: both;
-}
-
-h4 {
-  font-weight: bold;
-  margin-top: 10pt;
-  text-align: left;
-}
-
-/* copied from code */
-h5 code {
-  font-family: /*var(--quoteFont);*/'SF Mono', monospace;
-  font-weight: 600;
-  margin: 16px;
-  padding: 16px;
-  display: block;
-  color: var(--primary);
-  font-size: 110%;
-  line-height: 1.5em;
-  position: relative;
-  clear: none;
-}
-
-h5 {
-  background-color: /*var(--surface);*/#fdf4f5;
-  margin: 16px;
-}
-
-h2 + h4,
-h3 + h4 {
-  margin-top: 0px;
-}
-
-blockquote {
-  border-left: 3px solid /*var(--line)*/#a4b3b6;
-  padding-left: 10px;
-  position: relative;
-  left: 25%;
-  width: 70%;
-  margin-bottom: 10px;
-  /* quotes: none; */
-  font-style: italic;
-}
-
-blockquote p {
-  left: 0%;
-  width: 100%;
-  color: /*var(--additional);*/#bdcdd1;
-}
-
-/* blockquote:before { */
-/*   content: open-quote; */
-/* } */
-
 hr {
+  clear: both;
   margin-top: 1em;
   margin-bottom: 1em;
 }
-
-header + hr {
-  margin-top: 0.2em;
-}
-
 
 a {
-  color: inherit;
-  font-family: /*var(--linkFont);*/'SF Mono', monospace;
-  /* color: #346069; */
   color: #063d7f;
+  font-family: var(--linkFont);
   text-decoration: none;
-}
-
-a:visited {
-  color: #063d7f;
-}
-
-a:hover {
-  color: #0e1131;
-}
-
-em {
-  font-style: italic;
 }
 
 strong {
   font-weight: bolder;
 }
 
-#ghbutton {
+blockquote {
+  border-left: 3px solid var(--line);
+  padding-left: 10px;
+  font-style: italic;
+}
+
+blockquote p {
+  width: 100%;
+  margin-left: 0;
+  color: var(--secondary);
+}
+
+h5 {
+  background-color: var(--surface);
+  margin: 16px 0;
+  clear: both;
+}
+
+h1 code {
+  letter-spacing: -0.09em;
+}
+
+h5 code {
+  font-family: var(--quoteFont);
+  font-weight: 600;
+  padding: 16px;
+  display: block;
+  color: var(--primary);
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+h6 {
   display: none;
-  visibility: hidden;
+}
+
+/* --- Specific Section Styles --- */
+
+/* The contact table in the right column */
+table.contact-table {
+  letter-spacing: 0.1em;
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+}
+
+/* Cells within the contact table */
+table.contact-table td {
+  width: 50%;
+  border: none;
+  vertical-align: top;
+  padding: 2px 2%; /* A little vertical and horizontal padding */
 }

@@ -20,6 +20,14 @@ You can use [`src/sample.md`](src/sample.md) for reference and [`output/sample.p
 
 ## Running locally
 
+Load fonts if missing:
+```bash
+mkdir -p styles/default/fonts && \
+curl -o styles/default/fonts/SF-Pro-Display.woff https://fonts.cdnfonts.com/s/59278/SFPRODISPLAYREGULAR.woff && \
+curl -o styles/default/fonts/SF-Mono.woff https://fonts.cdnfonts.com/s/22256/SFMonoRegular.woff && \
+echo "✅ Fonts downloaded successfully!"
+```
+
 You'll need to install `pandoc` and `wkhtmltopdf`, optionally `lmodern` to use the default font. Afterwards just run `make`!
 
 on Linux:
