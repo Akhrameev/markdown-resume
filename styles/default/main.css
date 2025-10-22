@@ -51,7 +51,7 @@ html {
 body {
   font-family: var(--bodyFont);
   font-weight: 400;
-  font-size: 14pt;
+  font-size: 11pt;
   line-height: 1.3em;
 }
 
@@ -113,7 +113,7 @@ p, ul, blockquote, h4 {
 /* Section Subtitles in the right column */
 h4 {
   font-weight: bold;
-  margin-top: 1.5em; /* This creates the space for the entire row */
+  margin-top: 1.0em; /* This creates the space for the entire row */
   text-align: left;
 }
 
@@ -125,7 +125,7 @@ p {
 /* The FIRST content element after a header must also have a margin-top */
 h3 + p, h3 + ul {
   /* This margin must match the h3 'top' property for alignment */
-  margin-top: 1.5em;
+  margin-top: 1.0em;
 }
 
 /* Rule for content that directly follows a major h2 heading */
